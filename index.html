@@ -140,14 +140,14 @@
               <h2>粒子治療</h2>
               <span class="text sub_title bold">使用粒子射線</span>
               <div class="treat_list">
-                <div class="item_wrapper">
+                <div class="item_wrapper" id="treat_one">
                   <div class="item">
                     <span class="orange_dot"><img src="./img/list-style-orange.svg" /></span>
                     <span class="text bolder">質子治療</span>
                   </div>
                   <div class="arrow_wrapper"><i class="right_arrow"></i></div>
                 </div>
-                <div class="item_wrapper">
+                <div class="item_wrapper" id="treat_two">
                   <div class="item">
                     <span class="orange_dot"><img src="./img/list-style-orange.svg" /></span>
                     <span class="text bolder">重粒子治療</span>
@@ -200,21 +200,21 @@
               </div>
               <div class="treat_list">
                 <div class="text sub_title bold">新型標靶放射線治療</div>
-                <div class="item_wrapper">
+                <div class="item_wrapper" id="treat_three">
                   <div class="item">
                     <span class="orange_dot"><img src="./img/list-style-orange.svg" /></span>
                     <span class="text bolder">硼中子捕獲治療 (BNCT)</span>
                   </div>
                   <div class="arrow_wrapper"><i class="right_arrow"></i></div>
                 </div>
-                <div class="item_wrapper">
+                <div class="item_wrapper" id="treat_four">
                   <div class="item">
                     <span class="orange_dot"><img src="./img/list-style-orange.svg" /></span>
                     <span class="text bolder">攝護腺癌特異性膜抗原 (PSMA) 治療</span>
                   </div>
                   <div class="arrow_wrapper"><i class="right_arrow"></i></div>
                 </div>
-                <div class="item_wrapper">
+                <div class="item_wrapper" id="treat_five">
                   <div class="item">
                     <span class="orange_dot"><img src="./img/list-style-orange.svg" /></span>
                     <span class="text bolder">肽受體-放射性核素治療 (PRRT) (PSMA) 治療</span>
@@ -656,8 +656,35 @@
       </div>
     </div>
   </section>
+  <!--footer-->
+  <div class="footer">
+    <div id="commonhealth_footer">
+      <div class="commonhealth_footer-channel">
+        <ul>
+          <li><a href="https://cancer.commonhealth.com.tw/" target="_blank">癌症問康健</a></li>
+          <li><a href="https://www.commonhealth.com.tw/" target="_blank">康健官網</a></li>
+          <li><a href="https://www.commonhealth.com.tw/" target="_blank">康健雜誌</a></li>
+          <li><a href="https://www.commonhealth.com.tw/book/index.action" target="_blank">康健出版</a></li>
+          <li><a href="https://www.youtube.com/user/CommonHealthTV" target="_blank">康健影音</a></li>
+          <li><a href="https://line.me/ti/p/@commonhealth" target="_blank">康健LINE</a></li>
+          <br>
+          <li><a href="https://www.facebook.com/commonhealth/" target="_blank">康健FB</a></li>
+          <li><a href="https://kb.commonhealth.com.tw/" target="_blank">康健知識庫</a></li>
+          <li><a href="https://club.commonhealth.com.tw/" target="_blank">大人社團</a></li>
+          <li><a href="https://lohas.commonhealth.com.tw/" target="_blank">樂活島</a></li>
+        </ul>
+      </div>
+      <div class="commonhealth_footer-copyright">
+        Copyright © 2023 康健雜誌整合傳播部. All rights reserved. <br>本網站內容受著作權保護，詳細請閱讀<a
+          href="https://www.commonhealth.com.tw/copyright " target="_blank">著作權聲明</a>
+      </div>
+    </div>
+  </div>
+  <!--footer end-->
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script type="text/javascript">
     new WOW().init();
     var swiper = new Swiper(".mySwiper", {
@@ -670,6 +697,53 @@
         prevEl: ".swiper-button-prev"
       }
     });
+
+    $(document).ready(function () {
+      $('#treat_one').click(function () {
+        $('html, body').animate({
+          scrollTop: $("#particleTherapy").offset().top
+        }, 1000);
+      })
+      $('#treat_two').click(function () {
+        $('html, body').animate({
+          scrollTop: $("#heavyParticle").offset().top
+        }, 1000);
+      })
+      $('#treat_three').click(function () {
+        $("#tab4").click()
+        $('html, body').animate({
+          scrollTop: $(".graphical_therapy").offset().top
+        }, 1000);
+      })
+      $('#treat_four').click(function () {
+        $("#tab5").click()
+        $('html, body').animate({
+          scrollTop: $(".graphical_therapy").offset().top
+        }, 1000);
+      })
+      $('#treat_five').click(function () {
+        $("#tab6").click()
+        $('html, body').animate({
+          scrollTop: $(".graphical_therapy").offset().top
+        }, 1000);
+      })
+
+      $(document).on("click", function (e) {
+        $('.menu li').click(function() {
+          $('.menu-btn').prop('checked', false);
+        })
+        if($('.menu-btn').prop("checked")){
+          $('body').css({
+            overflow: 'hidden',
+          });
+        }
+        else {
+          $('body').css({
+            overflow: 'auto',
+          });
+        }
+      })
+  })
   </script>
 </body>
 
