@@ -131,6 +131,18 @@ table {
   border-spacing: 0;
 }
 
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
 h1 {
   font-weight: 600;
   font-size: 32px;
@@ -189,7 +201,7 @@ img {
 /* header */
 
 .header {
-  background: #F9F0CF;
+  background: linear-gradient(180deg, #F9E9B0 0%, rgba(245, 229, 172, 0.7) 45.89%, rgba(239, 223, 164, 0) 89%);
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -581,11 +593,13 @@ img {
   border-bottom: 1px dashed;
   padding-bottom: 12px;
   margin-top: 24px;
-      cursor: pointer;
+  cursor: pointer;
 }
+
 #radiationInfo .card_wrapper .bottom_div .item_wrapper:hover .text {
   color: #EA7754;
 }
+
 #radiationInfo .card_wrapper .bottom_div .item_wrapper:hover .right_arrow {
   border: solid #EA7754;
   border-width: 0 2px 2px 0;
@@ -619,6 +633,7 @@ img {
 #particleTherapy {
   padding-top: 100px;
 }
+
 #particleTherapy>.container>.text_block {
   text-align: center;
 }
@@ -760,6 +775,7 @@ img {
 #heavyParticle {
   padding-top: 100px;
 }
+
 #heavyParticle>.container>.text_block {
   text-align: center;
 }
@@ -971,9 +987,10 @@ img {
 }
 
 /* ====================== */
-#targetedTherapy{
+#targetedTherapy {
   padding-top: 100px;
 }
+
 #targetedTherapy>.container {
   text-align: center;
 }
@@ -1290,6 +1307,7 @@ img {
   flex-direction: column;
   margin: 0px 25px;
 }
+
 #recommend>.container .swiper-slide>.card_item:hover {
   filter: drop-shadow(0px 5px 5px rgba(12, 119, 196, 0.4));
 }
@@ -1427,7 +1445,7 @@ img {
   font-size: 18px;
   color: #FFFFFF;
   line-height: 50px;
-      cursor: pointer;
+  cursor: pointer;
 }
 
 #foundation .book_area>.btn_div:hover {
@@ -1443,7 +1461,7 @@ img {
 .footer {
   padding: 30px 0;
   background: #fff;
-  color:#1d1615;
+  color: #1d1615;
 }
 
 #commonhealth_footer {}
@@ -1563,40 +1581,266 @@ img {
 }
 
 /* ================ */
+
 @media (max-width: 1024px) {
-  #logo_img {
-        width: 102px;
+  .desktop {
+    display: none;
   }
-  .header .logo {
-      margin-left: 20px;
-          padding: 38px 0px;
+
+  .mobile {
+    display: block;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+     #logo_img {
+       width: 102px;
+     }
+    .header {
+          height: 65px;
     }
+        .header .logo {
+          margin-left: 20px;
+          padding: 20px 0px;
+        }
+
+  .header nav {
+    width: auto;
+  }
+
+  .header nav ul li a {
+    line-height: 26px;
+  }
+
+  .header nav .menu-icon {
+    display: inline-block;
+    padding: 32px 20px;
+  }
+
+  .header nav .menu {
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    left: 0px;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    border-top: 1px solid #0C77C3;
+    display: block;
+    background: #F9F0CF;
+  }
+
+  .header nav .menu .social {
+    display: flex;
+    justify-content: center;
+  }
+
+  #radiationInfo {
+    background-size: 200%;
+  }
+
+  #radiationInfo .card_wrapper {
+    flex-direction: column;
+  }
+
+  #radiationInfo .card_wrapper>.card_block {
+    margin: 0;
+  }
+
+  #radiationInfo .card_wrapper>.card_block .top_image>.card_title {
+    top: 50%;
+    left: 50%;
+    right: 0;
+    transform: translate(-15%, -50%);
+  }
+
+  #radiationInfo>.container>.img_table_area {
+    margin: 24px 0 0 0;
+  }
+
+  #radiationInfo>.container>.img_table_area .img_div {
+    width: 300%;
+  }
+
+  #particleTherapy>.container>.text_block .text {
+    text-align: left;
+  }
+
+  #particleTherapy>.container>.feature_block {
+    margin: 0;
+  }
+
+  #particleTherapy>.container>.feature_block>.tag_block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #particleTherapy>.container>.feature_block>.tag_block>div {
+    width: 350px;
+    height: 120px;
+  }
+
+  #particleTherapy>.container>.feature_block>.tag_block .tag2 {
+    margin: 15px 0;
+  }
+
+  #particleTherapy>.container>.suitable_block {
+    margin: 0;
+  }
+
+  #particleTherapy>.container>.suitable_block>.text {
+    text-align: left;
+  }
+
+  #particleTherapy>.container>.suitable_block>.text_bold {
+    text-align: left;
+  }
+
+  #particleTherapy>.container>.treatment_block {
+    flex-direction: column;
+    margin: 60px auto 40px;
+  }
+
+  #particleTherapy>.container>.treatment_block>.block_left {
+    top: auto;
+    left: auto;
+  }
+
+  #particleTherapy>.container>.treatment_block>.block_left .img_info {
+    width: initial;
+    position: relative;
+    padding: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    top: -20px;
+  }
+
+  #particleTherapy>.container>.treatment_block>.block_right {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #particleTherapy>.container>.treatment_block>.block_right>.border_gif {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    right: initial;
+  }
+
+  #heavyParticle>.container>.father_block>.info_div {
+    flex-direction: column;
+  }
+
+  #heavyParticle>.container>.father_block>.info_div>.father_info {
+    padding: 0;
+  }
+    #heavyParticle>.container>.father_block .sub_title {
+          margin: 12px 0 20px;
+          font-weight: 500;
+            font-size: 18px;
+            line-height: 34px;
+    }
+        #heavyParticle>.container>.father_block>.info_div>.father_info>.title {
+          line-height: 42px;
+              text-align: center;
+        }
+
+    #heavyParticle>.container>.feature_block>.tag_block {
+      flex-direction: column;
+        align-items: center;
+    }
+        #heavyParticle>.container>.feature_block>.tag_block>div {
+          width: 350px;
+            height: 120px;
+        }
+                #heavyParticle>.container>.feature_block>.tag_block .tag2{
+                      margin: 15px 0;
+                }
+
+        #heavyParticle>.what_block>.video_area{
+              margin: 0 20px;
+        }
+
+        #heavyParticle>.what_block>.title_area{
+              padding-top: 60px;
+        }
+    #heavyParticle>.what_block>.reverse_area>.content{
+      top: -35px;
+    }
+        #heavyParticle>.what_block>.reverse_area>.content>.text_div{
+          transform: translate(-50%, -45%);
+        }
+  #heavyParticle>.what_block>.reverse_area .text {
+        width: 65%;
+          margin: 0 auto;
+          text-align: left;
+          line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+    h2 {
+      font-size: 21px;
+      line-height: 28px;
+    }
+
+  .text {
+    font-size: 16px;
+  }
+
+
+  #radiationInfo {
+    background-size: 400%;
+  }
+
+  #radiationInfo .card_wrapper>.card_block .top_image>.card_title>.title {
+    font-size: 24px;
+  }
+
+  #particleTherapy>.container>.suitable_block>.text_bold {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  #heavyParticle>.container>.text_block .text {
+    text-align: left;
+  }
+
+  #heavyParticle>.container>.father_block {
+    margin: 65px 0;
+    padding: 0 15px;
+  }
+
+  #heavyParticle>.container>.father_block>.info_div .father_photo {
+    width: 240px;
+    top: -35px;
+  }
+    #heavyParticle>.container>.father_block> .sub_title {
+      font-size: 16px;
+      line-height: 30px;
+    }
+        #heavyParticle>.container>.suitable_block{
+          margin: 0;
+        }
+    #heavyParticle>.container>.suitable_block>.text{
+      text-align: left;
+    }
+        #heavyParticle>.container>.suitable_block>.text_bold {
+          text-align: left;
+        }
+    #heavyParticle>.container>.feature_block{
+      margin: 0;
+    }
+
   
-    .header nav {
-      width: auto;
-    }
-    .header nav ul li a {
-      line-height: 26px;
-    }
-  
-    .header nav .menu-icon {
-      display: inline-block;
-    }
-  
-    .header nav .menu {
-      position: absolute;
-      width: 100%;
-      top: 100px;
-      left: 0px;
-      max-height: 0;
-      transition: max-height 0.2s ease-out;
-      border-top: 1px solid #0C77C3;
-      display: block;
-      background: #F9F0CF;
-    }
-  
-    .header nav .menu .social {
-      display: flex;
-      justify-content: center;
-    }
 }
