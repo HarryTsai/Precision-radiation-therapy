@@ -54,23 +54,26 @@
     </nav>
   </header>
   <section id="index">
-    <div class="math_img">
+    <div class="math_img desktop">
       <img src="./img/main-number.png" alt="">
     </div>
-    <div class="left_gif">
+    <div class="left_gif desktop">
       <img src="./img/deco-left.gif" alt="">
     </div>
     <div class="main_img">
       <img src="./img/main.png" alt="">
     </div>
-    <div class="right_gif">
+    <div class="right_gif desktop">
       <img src="./img/deco-right.gif" alt="">
     </div>
-    <div class="left_hand">
+    <div class="left_hand desktop">
       <img src="./img/left-hand.png" alt="">
     </div>
-    <div class="right_hand">
+    <div class="right_hand desktop">
       <img src="./img/right-hand.png" alt="">
+    </div>
+    <div class="bottom_light mobile">
+      <img src="./img/mobile/mb-bottom.png" alt="">
     </div>
   </section>
   <section id="radiationInfo">
@@ -385,9 +388,9 @@
         <img src="./img/target.gif" alt="" />
       </div>
       <div class="text_block">
-        <h1>體內放射線治療的最新發展<br />
+        <h1>體內放射線治療的<br class="mobile" />最新發展<br class="desktop" />
           標靶放射線治療</h1>
-        <div class="text bold">放射線治療不只從體外照射，也可以將安全的放療藥物注射進血管，<br />
+        <div class="text bold">放射線治療不只從體外照射，<br class="mobile"/>也可以將安全的放療藥物注射進血管，<br/>
           像導向飛彈一般破壞癌細胞。</div>
       </div>
       <div class="divided_dot_div">
@@ -395,7 +398,7 @@
       </div>
       <div class="what_targetedTherapy">
         <h1>什麼是標靶放射線治療？</h1>
-        <div class="text">標靶放射線治療是結合「標靶藥」和「放射線治療」2種截然不同概念的新形態放射治療，<br />也稱為「癌細胞指向性放療（Tumor cell-targeting
+        <div class="text">標靶放射線治療是結合「標靶藥」和「放射線治療」2種截然不同概念的新形態放射治療，<br class="desktop"/>也稱為「癌細胞指向性放療（Tumor cell-targeting
           radiotherapy）」。
         </div>
       </div>
@@ -657,6 +660,12 @@
     <div class="deco_right desktop">
       <img src="./img/footer-deco-right.png" />
     </div>
+    <div class="deco_left mobile">
+      <img src="./img/mobile/mb-footer-img-left.png" />
+    </div>
+    <div class="deco_right mobile">
+      <img src="./img/mobile/mb-footer-img-right.png" />
+    </div>
     <div class="container">
       <div class="book_area">
         <img src="./img/magzine.png" alt="" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" />
@@ -665,6 +674,7 @@
       <div class="found_logo">
         <img src="./img/footer-logo.png" alt="" />
       </div>
+      <div class="text">鼓勵癌症醫學發展，提升癌友生命品質</div>
     </div>
   </section>
   <!--footer-->
@@ -699,13 +709,23 @@
   <script type="text/javascript">
     new WOW().init();
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
+      slidesPerView: 1,
       // spaceBetween: 30,
-      slidesPerGroup: 3,
+      slidesPerGroup: 1,
       centerInsufficientSlides: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 3,
+        },
       }
     });
 
