@@ -1268,6 +1268,12 @@ img {
   display: flex;
   justify-content: center;
 }
+#recommend>.container .swiper-slide a,
+#recommend>.container .swiper-slide a:visited,
+#recommend>.container .swiper-slide a:hover,
+#recommend>.container .swiper-slide a:active{
+      color: #0C77C3;
+}
 
 #recommend>.container .swiper-slide .card_item {
   max-width: 420px;
