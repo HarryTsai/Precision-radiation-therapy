@@ -183,14 +183,16 @@ h2 {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
+  padding: 0 90px;
 }
 
 body {
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC, Microsoft JhengHei;";
   background: url('../img/bg.jpg');
   background-size: cover;
   color: #0C77C3;
   letter-spacing: 0.06em;
+  text-decoration: none;
 }
 
 img {
@@ -362,7 +364,7 @@ img {
 #index>.left_gif {
   width: 15%;
   position: absolute;
-  top: 52%;
+  top: 50%;
   left: 15%;
   transform: translate(-50%, -50%);
 }
@@ -383,7 +385,7 @@ img {
   width: 8%;
   position: absolute;
   right: 5%;
-  top: 53%;
+  top: 49%;
   transform: translate(-50%, -50%);
 }
 
@@ -484,7 +486,7 @@ img {
 
 #radiationInfo .text_div {
   text-align: center;
-  padding-top: 90px;
+  padding-top: 130px;
   padding-bottom: 5%;
   margin: 0 auto;
   max-width: 850px;
@@ -733,6 +735,10 @@ img {
   left: 20px;
 }
 
+#particleTherapy>.container>.treatment_block>.block_left .img_group {
+    position: relative;
+}
+
 #particleTherapy>.container>.treatment_block>.block_left img {
   border-radius: 20px;
 }
@@ -761,12 +767,15 @@ img {
   padding: 3% 32px;
   text-align: left;
   margin-right: 20px;
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
 }
 
 #particleTherapy>.container>.treatment_block>.block_right>.border_gif {
-  width: 44px;
+  width: 60px;
   position: absolute;
-  bottom: -32px;
+  bottom: -43px;
   right: 35px;
   transform: rotate(180deg);
 }
@@ -787,11 +796,12 @@ img {
 #heavyParticle>.container>.father_block {
   background-image: url('../img/blue-bg.jpg');
   color: #fff;
-  margin: 65px 20px;
+  margin: 65px 110px;
   border-radius: 20px;
-  padding: 0 90px;
   background-position: center;
   background-size: cover;
+  margin: 65px 0;
+    padding: 0 60px;
 }
 
 #heavyParticle>.container>.father_block>.info_div {
@@ -806,7 +816,7 @@ img {
 }
 
 #heavyParticle>.container>.father_block>.info_div>.father_info {
-  padding: 67px 48px;
+  padding: 67px 0 67px 40px;
 }
 
 #heavyParticle>.container>.father_block>.info_div>.father_info>.title {
@@ -919,6 +929,7 @@ img {
   border-radius: 20px;
   margin: 0 auto;
   z-index: 1;
+      padding: 0 90px;
 }
 
 #heavyParticle>.what_block>.video_area>.content {
@@ -984,6 +995,7 @@ img {
 #heavyParticle>.what_block>.reverse_area .text {
   line-height: 35px;
   margin-top: 18px;
+  padding: 0 100px;
 }
 
 /* ====================== */
@@ -1015,7 +1027,6 @@ img {
 }
 
 #targetedTherapy>.container>.target_photo_block {
-  margin: 0 30px;
   position: relative;
 }
 
@@ -1028,7 +1039,7 @@ img {
   background: #469CCC;
   color: #fff;
   text-align: left;
-  width: 788px;
+  width: 760px;
   padding: 24px 30px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1301,26 +1312,26 @@ img {
   justify-content: center;
 }
 
-#recommend>.container .swiper-slide>.card_item {
+#recommend>.container .swiper-slide .card_item {
   width: 359px;
   display: flex;
   flex-direction: column;
   margin: 0px 25px;
 }
 
-#recommend>.container .swiper-slide>.card_item:hover {
+#recommend>.container .swiper-slide .card_item:hover {
   filter: drop-shadow(0px 5px 5px rgba(12, 119, 196, 0.4));
 }
 
-#recommend>.container .swiper-slide>.card_item>.card_img {
+#recommend>.container .swiper-slide .card_item>.card_img {
   max-height: 190px;
 }
 
-#recommend>.container .swiper-slide>.card_item img {
+#recommend>.container .swiper-slide .card_item img {
   border-radius: 20px 20px 0 0;
 }
 
-#recommend>.container .swiper-slide>.card_item>.card_text {
+#recommend>.container .swiper-slide .card_item>.card_text {
   border-radius: 0px 0px 20px 20px;
   border: 2px solid;
   border-top: 0;
