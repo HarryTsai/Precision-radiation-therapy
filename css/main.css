@@ -1205,11 +1205,16 @@ img {
 }
 
 #targetedTherapy>.container>.tabs_block>.tab-wrap>.tab__content>.tab_inner_content>.down_area>.title_div {
-  text-align: left;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 30px;
+  text-align: center;
   margin-bottom: 18px;
+}
+#targetedTherapy>.container>.tabs_block>.tab-wrap>.tab__content>.tab_inner_content>.down_area>.title_div h2{
+  font-weight: 500;
+  line-height: 38px;
+}
+#targetedTherapy>.container>.tabs_block>.tab-wrap>.tab__content>.tab_inner_content>.down_area>.title_div h1{
+  font-weight: 500;
+  line-height: 48px;
 }
 
 #targetedTherapy>.container>.tabs_block>.tab-wrap>.tab__content>.tab_inner_content>.down_area>.video_area {
@@ -1970,6 +1975,13 @@ img {
   #targetedTherapy {
     padding-top: 60px;
   }
+    #targetedTherapy>.container>.tabs_block>.tab-wrap>.tab__content>.tab_inner_content>.down_area>.title_div h2 {
+      line-height: 30px;
+    }
+  
+    #targetedTherapy>.container>.tabs_block>.tab-wrap>.tab__content>.tab_inner_content>.down_area>.title_div h1 {
+      line-height: 36px;
+    }
 
   #recommend {
     background-size: 165%;
