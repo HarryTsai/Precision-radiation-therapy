@@ -36,6 +36,17 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MCMN77');</script>
+  <!-- End Google Tag Manager -->
+
   <header class="header">
     <a href="https://www.commonhealth.com.tw/" class="logo" data-scroll>
       <img id="logo_img" src="./img/logo.png" alt="logo" />
@@ -44,10 +55,14 @@
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
-        <li><a href="#radiationInfo"> 認識放射線療法</a></li>
-        <li><a href="#particleTherapy">質子治療</a></li>
-        <li><a href="#heavyParticle">重粒子治療</a></li>
-        <li><a href="#targetedTherapy">新型標靶放射線治療</a></li>
+        <li><a href="#radiationInfo"
+            onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'menu-clicks-section-1')"> 認識放射線療法</a></li>
+        <li><a href="#particleTherapy"
+            onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'menu-clicks-section-2')">質子治療</a></li>
+        <li><a href="#heavyParticle"
+            onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'menu-clicks-section-3')">重粒子治療</a></li>
+        <li><a href="#targetedTherapy"
+            onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'menu-clicks-section-4')">新型標靶放射線治療</a></li>
         <li class="social">
           <a href="https://www.facebook.com/cancer.commonhealth/" target="_blank" onClick=""><img
               src="./img/Facebook.svg" /></a>
@@ -141,14 +156,16 @@
               <h2>粒子治療</h2>
               <span class="text sub_title bold">使用粒子射線</span>
               <div class="treat_list">
-                <div class="item_wrapper" id="treat_one">
+                <div class="item_wrapper" id="treat_one"
+                  onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'section-1-clicks1')">
                   <div class="item">
                     <span class="orange_dot"><img src="./img/list-style-orange.svg" /></span>
                     <span class="text bolder">質子治療</span>
                   </div>
                   <div class="arrow_wrapper"><i class="right_arrow"></i></div>
                 </div>
-                <div class="item_wrapper" id="treat_two">
+                <div class="item_wrapper" id="treat_two"
+                  onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'section-1-clicks2')">
                   <div class="item">
                     <span class="orange_dot"><img src="./img/list-style-orange.svg" /></span>
                     <span class="text bolder">重粒子治療</span>
@@ -201,21 +218,24 @@
               </div>
               <div class="treat_list">
                 <div class="text sub_title bold">新型標靶放射線治療</div>
-                <div class="item_wrapper" id="treat_three">
+                <div class="item_wrapper" id="treat_three"
+                  onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'section-1-clicks3')">
                   <div class="item">
                     <span class="orange_dot"><img src="./img/list-style-orange.svg" /></span>
                     <span class="text bolder">硼中子捕獲治療 (BNCT)</span>
                   </div>
                   <div class="arrow_wrapper"><i class="right_arrow"></i></div>
                 </div>
-                <div class="item_wrapper" id="treat_four">
+                <div class="item_wrapper" id="treat_four"
+                  onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'section-1-clicks4')">
                   <div class="item">
                     <span class="orange_dot"><img src="./img/list-style-orange.svg" /></span>
                     <span class="text bolder">攝護腺癌特異性膜抗原 (PSMA) 治療</span>
                   </div>
                   <div class="arrow_wrapper"><i class="right_arrow"></i></div>
                 </div>
-                <div class="item_wrapper" id="treat_five">
+                <div class="item_wrapper" id="treat_five"
+                  onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'section-1-clicks5')">
                   <div class="item">
                     <span class="orange_dot"><img src="./img/list-style-orange.svg" /></span>
                     <span class="text bolder">肽受體-放射性核素治療 (PRRT) 治療</span>
@@ -422,11 +442,16 @@
       <div class="tabs_block">
         <div class="tab-wrap">
           <input type="radio" id="tab4" name="tabGroup2" class="tab" checked>
-          <label for="tab4">硼中子捕獲治療 (BNCT)</label>
+          <label for="tab4" onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'section-4-clicks1')">硼中子捕獲治療
+            (BNCT)</label>
           <input type="radio" id="tab5" name="tabGroup2" class="tab">
-          <label for="tab5">攝護腺癌特異性膜抗原 (PSMA) 治療</label>
+          <label for="tab5"
+            onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'section-4-clicks2')">攝護腺癌特異性膜抗原 (PSMA)
+            治療</label>
           <input type="radio" id="tab6" name="tabGroup2" class="tab">
-          <label for="tab6">肽受體-放射性核素治療 (PRRT)</label>
+          <label for="tab6"
+            onClick="ga('send', 'event', 'web_web', 'radiation-therapy', 'section-4-clicks3')">肽受體-放射性核素治療
+            (PRRT)</label>
           <div class="tab__content">
             <div class="tab_inner_content">
               <div class="up_area">
@@ -498,8 +523,9 @@
                 <div class="title_div">聽更多專訪介紹</div>
                 <div>
                   <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/episode/2b5SLWEtfQS4nPiJgaWc34?utm_source=generator" width="100%" height="152"
-                    frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    src="https://open.spotify.com/embed/episode/2b5SLWEtfQS4nPiJgaWc34?utm_source=generator"
+                    width="100%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
                 </div>
               </div>
@@ -538,8 +564,9 @@
                 <div class="title_div">聽更多專訪介紹</div>
                 <div>
                   <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/episode/19A8wKuABAEmezh2y2Ncy7?utm_source=generator" width="100%" height="152"
-                    frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    src="https://open.spotify.com/embed/episode/19A8wKuABAEmezh2y2Ncy7?utm_source=generator"
+                    width="100%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
                 </div>
               </div>
@@ -573,26 +600,28 @@
         <div class="swiper-wrapper ">
           <div class="swiper-slide">
             <a href="https://cancer.commonhealth.com.tw/article/433" target="_blank">
-            <div class="card_item">
-              <div class="card_img">
-                <img src="./img/1_1.png" alt="" />
-              </div>
-              <div class="card_text text bold">
-                台灣第 3 座質子治療中心正式啟用，
+              <div class="card_item">
+                <div class="card_img">
+                  <img src="./img/1_1.png" alt="" />
+                </div>
+                <div class="card_text text bold">
+                  台灣第 3 座質子治療中心正式啟用，
                   哪些癌症適合做？
+                </div>
               </div>
-            </div></a>
+            </a>
           </div>
           <div class="swiper-slide">
             <a href="https://cancer.commonhealth.com.tw/article/513" target="_blank">
-            <div class="card_item">
-              <div class="card_img">
-                <img src="./img/1_2.png" alt="" />
+              <div class="card_item">
+                <div class="card_img">
+                  <img src="./img/1_2.png" alt="" />
+                </div>
+                <div class="card_text text bold">
+                  <div class="">什麼是質子治療、對哪些癌症療效最好？ 透視質子療法 3 大優質特性</div>
+                </div>
               </div>
-              <div class="card_text text bold">
-                <div class="">什麼是質子治療、對哪些癌症療效最好？ 透視質子療法 3 大優質特性</div>
-              </div>
-            </div></a>
+            </a>
           </div>
           <div class="swiper-slide">
             <a href="https://cancer.commonhealth.com.tw/article/335" target="_blank">
@@ -620,26 +649,26 @@
           </div>
           <div class="swiper-slide">
             <a href="https://cancer.commonhealth.com.tw/article/528" target="_blank">
-            <div class="card_item">
-              <div class="card_img">
-                <img src="./img/1_5.png" alt="" />
+              <div class="card_item">
+                <div class="card_img">
+                  <img src="./img/1_5.png" alt="" />
+                </div>
+                <div class="card_text text bold">
+                  <div class="">「賈伯斯病」神經內分泌腫瘤難確診，腹痛、胃酸多是警訊，最新療法PRRT一次了解</div>
+                </div>
               </div>
-              <div class="card_text text bold">
-                <div class="">「賈伯斯病」神經內分泌腫瘤難確診，腹痛、胃酸多是警訊，最新療法PRRT一次了解</div>
-              </div>
-            </div>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="https://cancer.commonhealth.com.tw/article/527" target="_blank">
-            <div class="card_item">
-              <div class="card_img">
-                <img src="./img/1_6.png" alt="" />
+              <div class="card_item">
+                <div class="card_img">
+                  <img src="./img/1_6.png" alt="" />
+                </div>
+                <div class="card_text text bold">
+                  <div class="">什麼是攝護腺癌放射線治療？會影響性功能嗎？治療副作用一次說明</div>
+                </div>
               </div>
-              <div class="card_text text bold">
-                <div class="">什麼是攝護腺癌放射線治療？會影響性功能嗎？治療副作用一次說明</div>
-              </div>
-            </div>
             </a>
           </div>
         </div>
@@ -651,14 +680,14 @@
         <div class="swiper-wrapper ">
           <div class="swiper-slide">
             <a href="https://cancer.commonhealth.com.tw/article/433" target="_blank">
-            <div class="card_item">
-              <div class="card_img">
-                <img src="./img/2_1.png" alt="" />
+              <div class="card_item">
+                <div class="card_img">
+                  <img src="./img/2_1.png" alt="" />
+                </div>
+                <div class="card_text text bold">
+                  <div class="">化療、放療後嘴破如何改善？ 10 種常備藥、飲食法助緩解</div>
+                </div>
               </div>
-              <div class="card_text text bold">
-                <div class="">化療、放療後嘴破如何改善？ 10 種常備藥、飲食法助緩解</div>
-              </div>
-            </div>
             </a>
           </div>
           <div class="swiper-slide">
@@ -787,7 +816,7 @@
     new WOW().init();
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 42,
       slidesPerGroup: 1,
       centerInsufficientSlides: true,
       navigation: {
@@ -799,7 +828,7 @@
           slidesPerView: 2,
           // spaceBetween: 2,
         },
-        1024: {
+        1025: {
           slidesPerView: 3,
           // spaceBetween: 3,
         },
