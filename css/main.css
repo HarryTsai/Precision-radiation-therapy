@@ -941,7 +941,7 @@ img {
 #heavyParticle>.what_block>.video_area>.content {
   position: relative;
   top: 0px;
-  padding-bottom: 45.3%;
+  padding-bottom: 60%;
   height: 0;
   overflow: hidden;
 }
@@ -1166,6 +1166,8 @@ img {
   border-bottom-right-radius: 20px;
 }
 
+
+
 #targetedTherapy>.container>.tabs_block>.tab-wrap>.tab__content>.tab_inner_content {
   display: flex;
   flex-direction: column;
@@ -1228,7 +1230,7 @@ img {
 #targetedTherapy>.container>.tabs_block>.tab-wrap>.tab__content>.tab_inner_content>.down_area>.video_area>.content {
   position: relative;
   top: 0px;
-  padding-bottom: 50%;
+  padding-bottom: 57%;
   height: 0;
   overflow: hidden;
 }
@@ -1635,7 +1637,7 @@ img {
 
   #index>.main_img {
     width: 100%;
-    top: 20%;
+    top: 8%;
     padding: 0 20px;
     max-width: 365px;
   }
@@ -1674,8 +1676,16 @@ img {
     margin: 24px 0 0 0;
   }
 
-  #radiationInfo>.container>.img_table_area .img_div {
-    width: 300%;
+    #radiationInfo>.container>.img_table_area>.img_table_block {
+      position: relative;
+    }
+    #radiationInfo>.container>.img_table_area>.img_table_block .left_fixed{
+      width: 24.52%;
+        position: absolute;
+        max-width: 176.5px;
+    }
+  #radiationInfo>.container>.img_table_area>.img_table_block .img_div {
+    width: 200%;
   }
 
   #particleTherapy>.container>.text_block .text {
@@ -1868,6 +1878,16 @@ img {
     padding: 16px;
   }
 
+    #targetedTherapy>.container>.tabs_block>.tab-wrap label>.arrow_wrapper {
+      display: inline-block;
+      position: relative;
+      top: -12px;
+      left: 12px;
+    }
+  
+    #targetedTherapy>.container>.tabs_block>.tab-wrap label>.arrow_wrapper>.right_arrow {
+      border-color: inherit;
+    }
   #targetedTherapy>.container>.tabs_block>.tab-wrap>.tab__content>.tab_inner_content>.up_area {
     flex-direction: column;
     margin-bottom: 30px;
@@ -1922,6 +1942,9 @@ img {
     font-size: 16px;
   }
 
+    #index{
+      height:92vh;
+    }
 
   #radiationInfo {
     background-size: 400%;
