@@ -1441,14 +1441,7 @@ img {
 
 #foundation .found_logo {
   width: 267px;
-  margin: 0 auto;
-}
-
-#foundation .text {
-  text-align: center;
-  color: #1A9C90;
-  letter-spacing: 0.08em;
-  margin-bottom: 97px;
+  margin: 0 auto 97px;
 }
 
 /* ==========footer========== */
@@ -1671,6 +1664,9 @@ img {
   #radiationInfo .card_wrapper>.card_block {
     margin: 0;
   }
+    #radiationInfo .card_wrapper>.card_block:first-of-type {
+      margin-bottom: 18px;
+    }
 
   #radiationInfo .card_wrapper>.card_block .top_image>.card_title {
     top: 50%;
@@ -2022,9 +2018,27 @@ img {
 }
 
 @media (max-width: 540px) {
-
+  #radiationInfo .card_wrapper>.card_block .top_image>.card_title>.title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  
+    #radiationInfo .card_wrapper>.card_block .top_image>.card_title>.sub {
+      font-size: 16px;
+      line-height: 16px;
+    }
   #foundation>.deco_left,
   #foundation>.deco_right {
     width: 35%;
   }
+}
+@media (max-width: 400px) {
+    /* .tab+label:nth-of-type(2){
+      text-align: left;
+      letter-spacing: 0.01px;
+    } */
+        .tab+label{
+          font-size: 14px;
+          min-width: 300px;
+        }
 }
