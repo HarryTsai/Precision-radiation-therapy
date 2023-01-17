@@ -2018,6 +2018,9 @@ img {
 }
 
 @media (max-width: 540px) {
+  #radiationInfo .text_div {
+    padding-top: 95px;
+  }
   #radiationInfo .card_wrapper>.card_block .top_image>.card_title>.title {
       font-size: 18px;
       line-height: 22px;
